@@ -75,5 +75,5 @@ if st.button("🔍 Predict Pollutants"):
         with st.container():
             st.markdown('<div class="prediction-box">', unsafe_allow_html=True)
             for p, val in zip(pollutants, predicted_pollutants):
-                st.markdown(f"<b>{p}:</b> {val:.2f}", unsafe_allow_html=True)
+                st.markdown(f"<b>{p}:</b> {val:.7f}", unsafe_allow_html=True)
             st.markdown('</div>', unsafe_allow_html=True)
